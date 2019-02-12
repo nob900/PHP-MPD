@@ -1141,7 +1141,7 @@ class MPD {
 		return $type_valid;
 	}
 	
-	private function parse_list($list_res, $use_str_assoc = false) {
+	function parse_list($list_res, $use_str_assoc = false) {
 		$list = array();
 		if ($list_res === false) {
 			$this->err = "List is empty";
